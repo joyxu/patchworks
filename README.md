@@ -1,5 +1,11 @@
 ## `dxgkrnl`, DirectX Support Driver for WSL2
 
+Author: Microsoft Corporation
+
+- [x] Modifications to the original code were made to enable the function on newer kernel revisions
+
+---
+
 [Read information here](https://devblogs.microsoft.com/directx/directx-heart-linux/)
 
 Dxgkrnl is a brand-new kernel driver for Linux that exposes the /dev/dxg device to user mode Linux. /dev/dxg exposes a set of IOCTL that closely mimic the native WDDM D3DKMT kernel service layer on Windows. Dxgkrnl inside of the Linux kernel connects over the VM Bus to its big brother on the Windows host and uses this VM bus connection to communicate with the physical GPU.
